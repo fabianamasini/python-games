@@ -1,14 +1,16 @@
+import random as rdm
+
 print("*************************")
 print("Welcome to guessing game!")
 print("*************************")
 
-secret_number = 42
+secret_number = round(rdm.randrange(1, 101))
 number_of_tries = 5
 game_round = 1
 
 for game_round in range(1, number_of_tries + 1):
-    print("Round {} of {}".format(game_round, number_of_tries))
-    guess_str = input("Enter your number. It must be between 1 and 100:")
+    print(f"Round {game_round} of {number_of_tries}")
+    guess_str = input("Enter your number. It must be between 1 and 100: ")
     guess = int(guess_str)
 
     if guess > 100 or guess < 1:
@@ -30,3 +32,4 @@ for game_round in range(1, number_of_tries + 1):
 
 print("\n")
 print("End of the game :)")
+print(f"The secret number was {secret_number}")
