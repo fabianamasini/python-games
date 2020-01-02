@@ -3,3 +3,6 @@ def play():
     print("Welcome to gallows game!")
     print("************************")
 
+
+if __name__ == "__main__":
+    play()

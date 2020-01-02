@@ -57,3 +57,7 @@ def play():
     print("End of the game :)")
     print(f"The secret number was {secret_number}")
     print(f"Your final punctuation: {points}")
+
+
+if __name__ == "__main__":
+    play()
